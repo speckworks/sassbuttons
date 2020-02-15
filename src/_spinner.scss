@@ -1,0 +1,39 @@
+@keyframes spinner {
+    0% {
+      transform: rotateZ(0deg);
+    }
+
+    10% {
+      transform: rotateZ(-360deg);
+    }
+  
+    20% {
+      transform: rotateZ(720deg);
+    }
+  
+    30% {
+      transform: rotateZ(1080deg);
+    }
+      
+    40% {
+      transform: rotateZ(1440deg);
+    }
+  
+    50% {
+      transform: rotateZ(1800deg);
+    }
+  
+    60% {
+      transform: rotateZ(2160deg);
+    }
+  
+    70% {
+      transform: rotateZ(2520deg);
+    }
+  }
+
+.spinner {
+    animation-name: spinner;
+    animation-duration: 5s;
+    z-index: 1000;
+  }

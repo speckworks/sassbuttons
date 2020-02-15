@@ -1,4 +1,26 @@
 @import url(https://fonts.googleapis.com/css?family=Poiret+One);
+@keyframes spinner {
+  0% {
+    transform: rotateZ(0deg); }
+  10% {
+    transform: rotateZ(-360deg); }
+  20% {
+    transform: rotateZ(720deg); }
+  30% {
+    transform: rotateZ(1080deg); }
+  40% {
+    transform: rotateZ(1440deg); }
+  50% {
+    transform: rotateZ(1800deg); }
+  60% {
+    transform: rotateZ(2160deg); }
+  70% {
+    transform: rotateZ(2520deg); } }
+.spinner {
+  animation-name: spinner;
+  animation-duration: 5s;
+  z-index: 1000; }
+
 .btn {
   color: white;
   text-decoration: none;
@@ -6,60 +28,55 @@
   border-radius: 3px;
   font-family: 'Poiret One', cursive;
   font-size: 2em;
-}
+  background-image: linear-gradient(90deg, #00C0FF 0%, #FFCF00 49%, #FC4F4F 80%, #00C0FF 100%); }
 
 .btn-green {
-  background: #2ecc71;
-}
-.btn-green:hover {
-  background: #26ab5f;
-  transition: all 0.3s ease;
-}
-.btn-green:active {
-  background: #176437;
-}
+  background: #2ecc71; }
+  .btn-green:hover {
+    background: #26ab5f;
+    transition: all 0.3s ease; }
+  .btn-green:active {
+    background: #176437; }
 
 .btn-blue {
-  background: #3498db;
-}
-.btn-blue:hover {
-  background: #2383c4;
-  transition: all 0.3s ease;
-}
-.btn-blue:active {
-  background: #16527a;
-}
+  background: #3498db; }
+  .btn-blue:hover {
+    background: #2383c4;
+    transition: all 0.3s ease; }
+  .btn-blue:active {
+    background: #16527a; }
 
 .btn-yellow {
-  background: #f1c40f;
-}
-.btn-yellow:hover {
-  background: #cba50c;
-  transition: all 0.3s ease;
-}
-.btn-yellow:active {
-  background: #796307;
-}
+  background: #f1c40f; }
+  .btn-yellow:hover {
+    background: #cba50c;
+    transition: all 0.3s ease; }
+  .btn-yellow:active {
+    background: #796307; }
 
 .btn-red {
-  background: #e74c3c;
-}
-.btn-red:hover {
-  background: #df2e1b;
-  transition: all 0.3s ease;
-}
-.btn-red:active {
-  background: #921e12;
-}
+  background: #e74c3c; }
+  .btn-red:hover {
+    background: #df2e1b;
+    transition: all 0.3s ease; }
+  .btn-red:active {
+    background: #921e12; }
 
 /*Other Stylez*/
 .wrap {
   margin: 0 auto;
   width: 800px;
-  text-align: center;
-}
+  text-align: center; }
 
 h1 {
   font-family: 'Poiret One', cursive;
-  font-size: 4em;
-}
+  font-size: 4em; }
+
+p {
+  background-color: yellow;
+  font-family: "Odibee Sans", cursive;
+  font-size: 80px; }
+  p:hover {
+    background-color: #66ff00; }
+
+/*# sourceMappingURL=style.css.map */

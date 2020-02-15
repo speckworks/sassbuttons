@@ -1,0 +1,5 @@
+@function inversion($color, $amount: 60%) {
+    $inverse: change-color($color, $hue: hue($color) + 60);
+    @return mix($inverse, $color, $amount);
+  }
+  
